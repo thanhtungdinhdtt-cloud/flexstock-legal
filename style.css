@@ -1,0 +1,150 @@
+/* FlexStock legal site — shared styles. No external fonts or scripts (privacy-friendly, fast). */
+
+:root {
+  --bg: #ffffff;
+  --fg: #1c1f23;
+  --muted: #5b6470;
+  --line: #e3e7ec;
+  --accent: #0f766e;      /* teal, matches the app's accent colour */
+  --accent-soft: #e6f4f2;
+  --card: #f7f9fb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161a;
+    --fg: #e8ecf0;
+    --muted: #9aa5b1;
+    --line: #2a313a;
+    --accent: #2dd4bf;
+    --accent-soft: #14312e;
+    --card: #1a2026;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a { color: var(--accent); text-underline-offset: 2px; }
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 20px 8px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.lang a, .pages a {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 2px 2px 2px 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.lang a[aria-current="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pages {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px 8px;
+}
+
+.pages a { color: var(--fg); }
+.pages a.current { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 8px 20px 40px;
+}
+
+/* One <section class="doc"> per language. Without JavaScript all three are shown one after another;
+   with JavaScript (class "js" on <html>) only the selected language is shown. */
+html.js .doc { display: none; }
+html.js[data-lang="vi"] .doc[data-doc-lang="vi"],
+html.js[data-lang="en"] .doc[data-doc-lang="en"],
+html.js[data-lang="ja"] .doc[data-doc-lang="ja"] { display: block; }
+
+.doc + .doc { margin-top: 48px; padding-top: 32px; border-top: 2px solid var(--line); }
+
+h1 { font-size: 1.8rem; line-height: 1.3; margin: 24px 0 8px; }
+h2 { font-size: 1.15rem; margin: 28px 0 6px; }
+p, li { margin: 8px 0; }
+ul { padding-left: 1.25rem; }
+
+.meta { color: var(--muted); font-size: 0.9rem; margin-top: 0; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px 18px 14px;
+  margin: 16px 0;
+}
+
+.card h2 { margin-top: 14px; }
+
+.note {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 14px 0;
+}
+
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px 20px 40px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
+}
+
+/* Short labels that switch language together with the document (navigation buttons). */
+html.js .lbl { display: none; }
+html.js[data-lang="vi"] .lbl[data-l="vi"],
+html.js[data-lang="en"] .lbl[data-l="en"],
+html.js[data-lang="ja"] .lbl[data-l="ja"] { display: inline; }
+.lbl + .lbl::before { content: " / "; }          /* only visible without JavaScript */
+html.js .lbl + .lbl::before { content: none; }
+
+.cards { display: grid; gap: 12px; margin: 20px 0; }
+.cards a.card { display: block; text-decoration: none; color: var(--fg); padding: 14px 18px; }
+.cards a.card strong { color: var(--accent); }
