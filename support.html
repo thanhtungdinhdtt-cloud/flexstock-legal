@@ -54,6 +54,15 @@
     <h2>Tôi muốn xuất dữ liệu hoặc chuyển sang máy khác</h2>
     <p>Dùng "Xuất CSV" trong ứng dụng, rồi "Nhập CSV" trên máy mới. Với dữ liệu Local, bạn cũng có thể dùng "Nâng cấp dữ liệu Local lên Cloud" trong Cài đặt. Lưu ý dữ liệu Local chỉ nằm trên máy của bạn nên hãy xuất CSV để có bản sao lưu.</p>
 
+    <h2>Tôi muốn quét mã vạch để điền, tìm sản phẩm hoặc nhập/xuất kho</h2>
+    <p>Cần có ít nhất một field kiểu <strong>Barcode</strong> trong Category (thêm ở Field tuỳ chỉnh). Khi tạo/sửa sản phẩm, bấm <strong>Quét</strong> cạnh field Barcode để điền mã. Ở danh sách sản phẩm, bấm biểu tượng khung quét trên thanh công cụ để tìm sản phẩm theo mã. Ở chế độ Cloud, trong phiếu Nhập kho/Xuất kho bấm <strong>Quét mã vạch</strong>: camera giữ mở và mỗi lần quét thêm 1 sản phẩm vào phiếu. Lần đầu dùng, iPhone sẽ hỏi quyền camera. Ảnh từ camera không được lưu hay gửi đi — mã được đọc ngay trên máy.</p>
+
+    <h2>Camera không mở hoặc báo chưa được cấp quyền</h2>
+    <p>Mở Cài đặt của iPhone &rarr; FlexStock &rarr; bật <strong>Camera</strong> (hoặc bấm <strong>Mở Cài đặt</strong> ngay trong màn quét). Nếu camera bị giới hạn bởi Thời gian sử dụng hoặc chính sách của tổ chức, hoặc máy không hỗ trợ quét bằng camera, bạn vẫn dùng được: nhập mã vào ô <strong>Nhập mã</strong> bên dưới, hoặc dùng máy quét Bluetooth/USB (máy quét gõ chuỗi mã rồi Enter vào ô đó).</p>
+
+    <h2>Tôi muốn tạo và in nhãn mã vạch cho sản phẩm không có mã</h2>
+    <p>Mở form sản phẩm, ở field Barcode bấm <strong>Tạo mã</strong> để app tự đặt một mã nội bộ (dạng FS + 10 chữ số), rồi bấm <strong>Nhãn</strong> để xem nhãn (Mã vạch hoặc Mã QR). Bấm <strong>Chia sẻ</strong> rồi chọn In (AirPrint), Lưu vào Ảnh hoặc AirDrop. Hãy chốt mã trước khi in và dán: đổi mã trong app sau đó thì nhãn cũ sẽ không còn khớp. Hai sản phẩm trùng mã sẽ có cảnh báo màu cam nhưng vẫn lưu được.</p>
+
     <h2>Ứng dụng báo đã đạt giới hạn gói miễn phí</h2>
     <p>Gói miễn phí cho 1 Business, tối đa 3 thành viên và 50 sản phẩm mỗi Business. Bạn có thể nâng cấp gói hoặc xoá bớt dữ liệu. Chế độ Local không có các giới hạn này.</p>
   </section>
@@ -88,6 +97,15 @@
     <h2>I want to export my data or move to another device</h2>
     <p>Use "Export CSV" in the app, then "Import CSV" on the new device. For Local data you can also use "Upgrade Local Data to Cloud" in Settings. Local data lives only on your device, so export CSV files as a backup.</p>
 
+    <h2>I want to scan barcodes to fill in, find products, or record stock in/out</h2>
+    <p>The Category needs at least one <strong>Barcode</strong>-type field (add it under Custom Fields). When creating or editing a product, tap <strong>Scan</strong> next to the Barcode field to fill in the code. In the product list, tap the scan icon in the toolbar to find a product by its code. In Cloud mode, in a Stock-in or Stock-out voucher tap <strong>Scan barcode</strong>: the camera stays open and each scan adds 1 product to the voucher. The first time, iOS asks for camera access. Camera images are not saved or sent anywhere &mdash; the code is read on your device.</p>
+
+    <h2>The camera won't open or says access was not granted</h2>
+    <p>Open the iPhone Settings app &rarr; FlexStock &rarr; turn on <strong>Camera</strong> (or tap <strong>Open Settings</strong> on the scan screen). If the camera is restricted by Screen Time or an organization policy, or the device can't scan with the camera, you can still work: type the code into the <strong>Enter code</strong> field below, or use a Bluetooth/USB scanner (it types the code and presses Enter in that field).</p>
+
+    <h2>I want to create and print barcode labels for products that have no barcode</h2>
+    <p>Open the product form, tap <strong>Generate code</strong> at the Barcode field to get an internal code (FS followed by 10 digits), then tap <strong>Label</strong> to view the label (barcode or QR code). Tap <strong>Share</strong> and choose Print (AirPrint), Save to Photos, or AirDrop. Decide the code before you print and stick it on: changing the code in the app afterwards makes the old label stop matching. Two products with the same code show an orange warning but can still be saved.</p>
+
     <h2>The app says I reached the free plan limit</h2>
     <p>The free plan allows 1 Business, up to 3 members and 50 products per Business. You can upgrade or remove some data. Local mode has none of these limits.</p>
   </section>
@@ -121,6 +139,15 @@
 
     <h2>データをエクスポートしたい・別の端末に移したい</h2>
     <p>アプリの「CSVをエクスポート」を使い、新しい端末で「CSVをインポート」してください。ローカルデータは、「設定」の「ローカルデータをクラウドへアップグレード」でクラウドへ移行することもできます。ローカルデータは端末内にのみ存在するため、バックアップとしてCSVをエクスポートしておくことをおすすめします。</p>
+
+    <h2>バーコードをスキャンして入力・商品検索・入出庫をしたい</h2>
+    <p>カテゴリーに<strong>バーコード</strong>型のフィールドが1つ以上必要です（カスタムフィールドで追加）。商品の作成・編集では、バーコードのフィールドの横にある<strong>スキャン</strong>をタップしてコードを入力します。商品一覧ではツールバーのスキャンアイコンをタップすると、コードで商品を検索できます。クラウドモードの入庫・出庫伝票では<strong>バーコードをスキャン</strong>をタップします。カメラは開いたままになり、スキャンするたびに商品が1つ伝票に追加されます。初回はiOSがカメラの使用許可を求めます。カメラの画像は保存も送信もされず、コードはお使いの端末上で読み取られます。</p>
+
+    <h2>カメラが開かない、または許可されていないと表示される</h2>
+    <p>iPhoneの「設定」アプリ &rarr; FlexStock &rarr; <strong>カメラ</strong>をオンにしてください（スキャン画面の<strong>設定を開く</strong>をタップしても構いません）。スクリーンタイムや組織のポリシーでカメラが制限されている場合、またはデバイスがカメラでのスキャンに対応していない場合でも、下の<strong>コードを入力</strong>欄に手入力するか、Bluetooth/USBスキャナ（コードを入力してEnterを押します）をご利用いただけます。</p>
+
+    <h2>バーコードのない商品用にバーコードラベルを作成・印刷したい</h2>
+    <p>商品フォームのバーコードのフィールドで<strong>コード生成</strong>をタップすると、内部コード（FSと10桁の数字）が作成されます。続けて<strong>ラベル</strong>をタップするとラベル（バーコードまたはQRコード）を確認できます。<strong>共有</strong>をタップして、プリント（AirPrint）、画像を保存、またはAirDropを選びます。印刷して貼る前にコードを確定してください。後からアプリ内でコードを変更すると、古いラベルは一致しなくなります。同じコードの商品が2つあるとオレンジ色の警告が表示されますが、保存はできます。</p>
 
     <h2>無料プランの上限に達したと表示されます</h2>
     <p>無料プランでは、Businessは1つ、各Businessでメンバー3人まで、商品50件までです。プランをアップグレードするか、一部のデータを削除してください。ローカルモードにはこれらの上限はありません。</p>

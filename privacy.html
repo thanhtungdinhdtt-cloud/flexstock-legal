@@ -25,7 +25,7 @@
 <main>
   <section class="doc" lang="vi" data-doc-lang="vi">
 <h1>Chính sách bảo mật</h1>
-    <p class="meta">Có hiệu lực từ: 01/10/2026 &middot; Nhà phát triển: DINH THANH TUNG (TuLyKem) &middot; Liên hệ: <a href="mailto:flexstock.support@gmail.com">flexstock.support@gmail.com</a></p>
+    <p class="meta">Có hiệu lực từ: 02/10/2026 &middot; Nhà phát triển: DINH THANH TUNG (TuLyKem) &middot; Liên hệ: <a href="mailto:flexstock.support@gmail.com">flexstock.support@gmail.com</a></p>
 
     <h2>1. Giới thiệu</h2>
     <p>FlexStock là ứng dụng quản lý kho/tồn kho dành cho gia đình và hộ kinh doanh nhỏ, do DINH THANH TUNG (TuLyKem) ("chúng tôi") phát hành. Chính sách này giải thích chúng tôi xử lý những dữ liệu nào khi bạn dùng FlexStock, vì sao, chia sẻ với ai, lưu bao lâu và bạn có những lựa chọn nào.</p>
@@ -39,13 +39,15 @@
     <h2>3. Dữ liệu chúng tôi thu thập ở chế độ Cloud</h2>
     <ul>
       <li><strong>Tài khoản:</strong> địa chỉ email và mật khẩu. Mật khẩu do Amazon Cognito xử lý; chúng tôi không xem được và không lưu mật khẩu trong cơ sở dữ liệu của mình.</li>
-      <li><strong>Dữ liệu kho bạn nhập:</strong> tên Business, Category, định nghĩa Field tuỳ chỉnh, sản phẩm và giá trị các field, số lượng, ngưỡng tồn tối thiểu, phiếu Nhập/Xuất/Chuyển kho cùng lịch sử, và dữ liệu bạn nhập từ file CSV.</li>
+      <li><strong>Dữ liệu kho bạn nhập:</strong> tên Business, Category, định nghĩa Field tuỳ chỉnh, sản phẩm và giá trị các field (kể cả mã vạch bạn nhập hoặc quét), số lượng, ngưỡng tồn tối thiểu, phiếu Nhập/Xuất/Chuyển kho cùng lịch sử, và dữ liệu bạn nhập từ file CSV.</li>
       <li><strong>Thành viên:</strong> nếu bạn mời người khác — email, tên hiển thị và vai trò (Owner/Admin/Staff) của họ. Chúng tôi gửi email mời tới người được mời.</li>
       <li><strong>Lịch sử hoạt động:</strong> bản ghi ai (mã tài khoản nội bộ) đã làm gì, khi nào trong một Business — ví dụ tạo/sửa/xoá sản phẩm, đổi vai trò thành viên — kèm tên đối tượng bị tác động tại thời điểm đó.</li>
-      <li><strong>Thông tin gói trả phí:</strong> khi bạn mua gói qua App Store, chúng tôi nhận từ Apple thông tin giao dịch cần để xác minh (mã giao dịch, gói, thời hạn). Giao dịch được gắn với tài khoản của bạn bằng một mã tài khoản ẩn danh. Chúng tôi không nhận số thẻ hay thông tin thanh toán của bạn; Apple xử lý thanh toán.</li>
+      <li><strong>Thông tin gói trả phí:</strong> khi bạn mua gói qua App Store, chúng tôi nhận từ Apple thông tin giao dịch cần để xác minh (mã giao dịch, gói, thời hạn). Giao dịch được gắn với tài khoản của bạn bằng mã tài khoản nội bộ của FlexStock (không phải email của bạn). Chúng tôi không nhận số thẻ hay thông tin thanh toán của bạn; Apple xử lý thanh toán.</li>
       <li><strong>Nhật ký kỹ thuật:</strong> hạ tầng đám mây (AWS) có thể ghi lại thời điểm yêu cầu, thông tin lỗi và địa chỉ IP để vận hành, bảo mật và chống lạm dụng.</li>
     </ul>
-    <p><strong>Chúng tôi không thu thập:</strong> vị trí, danh bạ, ảnh, dữ liệu micro/camera, hay mã định danh quảng cáo. FlexStock không có quảng cáo và không dùng SDK phân tích hay theo dõi của bên thứ ba. Nếu phiên bản sau cần quyền mới (ví dụ camera để quét mã vạch), chúng tôi sẽ cập nhật chính sách này trước khi phát hành tính năng đó.</p>
+    <p><strong>Chúng tôi không thu thập:</strong> vị trí, danh bạ, thư viện ảnh, dữ liệu micro, hay mã định danh quảng cáo. FlexStock không có quảng cáo và không dùng SDK phân tích hay theo dõi của bên thứ ba.</p>
+    <p><strong>Camera (chỉ khi bạn quét mã vạch):</strong> FlexStock chỉ xin quyền dùng camera khi bạn bấm Quét mã vạch. Việc đọc mã diễn ra <strong>ngay trên thiết bị</strong>; ảnh và video từ camera <strong>không được lưu, không được gửi</strong> cho chúng tôi hay bên nào khác. Chỉ chuỗi ký tự của mã vạch (ví dụ một dãy số) được dùng — và chỉ được lưu khi bạn đưa nó vào một field của sản phẩm, khi đó nó là dữ liệu kho của bạn như mô tả ở trên (ở chế độ Cloud, nó được lưu cùng các giá trị field khác). Bạn có thể thu hồi quyền camera bất kỳ lúc nào trong Cài đặt của iPhone; app vẫn dùng được bình thường, bạn chỉ cần nhập mã bằng tay hoặc dùng máy quét Bluetooth.</p>
+    <p><strong>Nhãn mã vạch:</strong> nhãn do FlexStock tạo ngay trên thiết bị. Khi bạn chia sẻ hoặc in nhãn, việc đó do bạn thực hiện qua khung chia sẻ của iOS; chúng tôi không nhận bản sao của nhãn. Nếu sau này phiên bản mới cần thêm quyền khác, chúng tôi sẽ cập nhật chính sách này trước khi phát hành tính năng đó.</p>
 
     <h2>4. Chúng tôi dùng dữ liệu để làm gì</h2>
     <ul>
@@ -99,7 +101,7 @@
   </section>
   <section class="doc" lang="en" data-doc-lang="en">
 <h1>Privacy Policy</h1>
-    <p class="meta">Effective: October 1, 2026 &middot; Publisher: DINH THANH TUNG (TuLyKem) &middot; Contact: <a href="mailto:flexstock.support@gmail.com">flexstock.support@gmail.com</a></p>
+    <p class="meta">Effective: October 2, 2026 &middot; Publisher: DINH THANH TUNG (TuLyKem) &middot; Contact: <a href="mailto:flexstock.support@gmail.com">flexstock.support@gmail.com</a></p>
 
     <h2>1. About FlexStock and this policy</h2>
     <p>FlexStock is an inventory (stock) management app for families and small businesses, published by DINH THANH TUNG (TuLyKem) ("we", "us"). This policy explains what data we handle when you use FlexStock, why, who we share it with, how long we keep it, and the choices you have.</p>
@@ -113,13 +115,15 @@
     <h2>3. Data we collect in Cloud mode</h2>
     <ul>
       <li><strong>Account:</strong> your email address and password. Your password is handled by Amazon Cognito; we cannot see it and do not store it in our own database.</li>
-      <li><strong>Inventory data you enter:</strong> Business names, categories, custom field definitions, products and their field values, quantities, minimum-stock thresholds, stock in/out/transfer vouchers and their history, and data you import from CSV files.</li>
+      <li><strong>Inventory data you enter:</strong> Business names, categories, custom field definitions, products and their field values (including barcodes you type or scan), quantities, minimum-stock thresholds, stock in/out/transfer vouchers and their history, and data you import from CSV files.</li>
       <li><strong>Team members:</strong> if you invite someone, their email address, display name and role (Owner/Admin/Staff). We send the invited person an invitation email.</li>
       <li><strong>Activity log:</strong> a record of who (internal account ID) did what and when inside a Business &mdash; for example creating, editing or deleting a product, or changing a member's role &mdash; together with the name of the affected item at that time.</li>
-      <li><strong>Subscription information:</strong> if you buy a paid plan through the App Store, we receive from Apple the transaction details needed to verify it (such as transaction identifiers, plan and expiry). The purchase is linked to your account by an anonymous account token. We never receive your card number or payment details; Apple processes the payment.</li>
+      <li><strong>Subscription information:</strong> if you buy a paid plan through the App Store, we receive from Apple the transaction details needed to verify it (such as transaction identifiers, plan and expiry). The purchase is linked to your account by FlexStock's internal account identifier (not your email address). We never receive your card number or payment details; Apple processes the payment.</li>
       <li><strong>Technical logs:</strong> our cloud infrastructure (AWS) may record request time, error details and IP address for operation, security and abuse prevention.</li>
     </ul>
-    <p><strong>What we do not collect:</strong> location, contacts, photos, microphone or camera data, or advertising identifiers. FlexStock contains no advertising and no third-party analytics or tracking SDKs. If a future version needs a new permission (for example the camera for barcode scanning), we will update this policy before that feature is released.</p>
+    <p><strong>What we do not collect:</strong> location, contacts, your photo library, microphone data, or advertising identifiers. FlexStock contains no advertising and no third-party analytics or tracking SDKs.</p>
+    <p><strong>Camera (only when you scan a barcode):</strong> FlexStock asks for camera access only when you tap Scan barcode. Barcodes are read <strong>on your device</strong>; the camera's photos and video are <strong>not saved and not sent</strong> to us or to anyone else. Only the barcode's text (for example a string of digits) is used &mdash; and it is stored only if you put it into a product field, in which case it is your inventory data as described above (in Cloud mode it is stored with your other field values). You can withdraw camera access at any time in the iPhone's Settings; the app keeps working, you just type the code or use a Bluetooth scanner.</p>
+    <p><strong>Barcode labels:</strong> labels are created on your device. When you share or print a label, you do so through iOS's share sheet; we do not receive a copy. If a future version needs another permission, we will update this policy before that feature is released.</p>
 
     <h2>4. How we use data</h2>
     <ul>
@@ -173,7 +177,7 @@
   </section>
   <section class="doc" lang="ja" data-doc-lang="ja">
 <h1>プライバシーポリシー</h1>
-    <p class="meta">施行日：2026年10月1日 &middot; 提供者：DINH THANH TUNG (TuLyKem) &middot; 連絡先：<a href="mailto:flexstock.support@gmail.com">flexstock.support@gmail.com</a></p>
+    <p class="meta">施行日：2026年10月2日 &middot; 提供者：DINH THANH TUNG (TuLyKem) &middot; 連絡先：<a href="mailto:flexstock.support@gmail.com">flexstock.support@gmail.com</a></p>
 
     <h2>1. FlexStockと本ポリシーについて</h2>
     <p>FlexStock（以下「本アプリ」）は、家庭や小規模事業者向けの在庫管理アプリで、DINH THANH TUNG (TuLyKem)（以下「当方」）が提供しています。本ポリシーでは、本アプリのご利用にあたって取り扱うデータ、その目的、共有先、保管期間、およびお客様の選択肢について説明します。</p>
@@ -187,13 +191,15 @@
     <h2>3. クラウドモードで取得するデータ</h2>
     <ul>
       <li><strong>アカウント情報：</strong>メールアドレスとパスワード。パスワードはAmazon Cognitoが処理し、当方は閲覧できず、独自のデータベースにも保存しません。</li>
-      <li><strong>入力した在庫データ：</strong>Business名、カテゴリー、カスタムフィールドの定義、商品とその値、数量、最小在庫のしきい値、入庫・出庫・移動の伝票と履歴、CSVからインポートしたデータ。</li>
+      <li><strong>入力した在庫データ：</strong>Business名、カテゴリー、カスタムフィールドの定義、商品とその値（入力またはスキャンしたバーコードを含む）、数量、最小在庫のしきい値、入庫・出庫・移動の伝票と履歴、CSVからインポートしたデータ。</li>
       <li><strong>メンバー情報：</strong>他の方を招待した場合、その方のメールアドレス、表示名、役割（Owner/Admin/Staff）。招待された方には招待メールを送信します。</li>
       <li><strong>操作履歴：</strong>Business内で誰（内部アカウントID）が、いつ、何をしたか（例：商品の作成・編集・削除、メンバーの役割変更）の記録と、その時点の対象の名称。</li>
-      <li><strong>サブスクリプション情報：</strong>App Storeで有料プランを購入した場合、検証に必要な取引情報（取引ID、プラン、有効期限など）をAppleから受け取ります。購入は匿名のアカウントトークンでお客様のアカウントに紐づけられます。カード番号などの支払い情報は受け取りません（決済はAppleが行います）。</li>
+      <li><strong>サブスクリプション情報：</strong>App Storeで有料プランを購入した場合、検証に必要な取引情報（取引ID、プラン、有効期限など）をAppleから受け取ります。購入はFlexStockの内部アカウント識別子（メールアドレスではありません）でお客様のアカウントに紐づけられます。カード番号などの支払い情報は受け取りません（決済はAppleが行います）。</li>
       <li><strong>技術ログ：</strong>運用、セキュリティ、不正利用の防止のため、クラウド基盤（AWS）がリクエスト時刻、エラー情報、IPアドレスを記録する場合があります。</li>
     </ul>
-    <p><strong>取得しないもの：</strong>位置情報、連絡先、写真、マイク・カメラのデータ、広告識別子。本アプリには広告も、第三者の分析・トラッキングSDKもありません。将来のバージョンで新しい権限（例：バーコードスキャン用のカメラ）が必要になる場合は、その機能を提供する前に本ポリシーを更新します。</p>
+    <p><strong>取得しないもの：</strong>位置情報、連絡先、写真ライブラリ、マイクのデータ、広告識別子。本アプリには広告も、第三者の分析・トラッキングSDKもありません。</p>
+    <p><strong>カメラ（バーコードをスキャンするときのみ）：</strong>FlexStockは、「バーコードをスキャン」をタップしたときにだけカメラの使用許可を求めます。バーコードの読み取りは<strong>お使いの端末上</strong>で行われ、カメラの写真や動画は当方や第三者に<strong>保存も送信もされません</strong>。使用されるのはバーコードの文字列（数字の並びなど）のみで、商品のフィールドに入れた場合にのみ保存されます。その場合は上記のとおりお客様の在庫データとなります（クラウドモードでは他のフィールド値と一緒に保存されます）。カメラの許可は、iPhoneの設定でいつでも取り消せます。取り消してもアプリは通常どおり使えます（コードを手入力するか、Bluetoothスキャナをご利用ください）。</p>
+    <p><strong>バーコードラベル：</strong>ラベルはお使いの端末上で作成されます。ラベルの共有や印刷は、お客様ご自身がiOSの共有機能を通じて行うもので、当方にはそのコピーは届きません。今後のバージョンで別の権限が必要になる場合は、その機能を提供する前に本ポリシーを更新します。</p>
 
     <h2>4. 利用目的</h2>
     <ul>
