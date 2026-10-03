@@ -52,7 +52,13 @@
     <p>Mở Cài đặt của iPhone &rarr; tên của bạn &rarr; Đăng ký (Subscriptions), rồi chọn FlexStock. Gói gắn với tài khoản FlexStock đã dùng khi mua: nếu đã mua mà chưa thấy quyền lợi, hãy đăng nhập đúng tài khoản FlexStock đó rồi mở lại màn nâng cấp.</p>
 
     <h2>Tôi muốn xuất dữ liệu hoặc chuyển sang máy khác</h2>
-    <p>Dùng "Xuất CSV" trong ứng dụng, rồi "Nhập CSV" trên máy mới. Với dữ liệu Local, bạn cũng có thể dùng "Nâng cấp dữ liệu Local lên Cloud" trong Cài đặt. Lưu ý dữ liệu Local chỉ nằm trên máy của bạn nên hãy xuất CSV để có bản sao lưu.</p>
+    <p>Với dữ liệu Local, cách đầy đủ nhất là <strong>Sao lưu &amp; khôi phục</strong> trong Cài đặt: bấm "Sao lưu dữ liệu Local" để lưu một file .json (gồm cả Category, field và sản phẩm), rồi trên máy mới bấm "Khôi phục từ file…". Bạn cũng có thể dùng "Xuất CSV" / "Nhập CSV" cho từng Category, hoặc "Nâng cấp dữ liệu Local lên Cloud" trong Cài đặt. Lưu ý dữ liệu Local chỉ nằm trên máy của bạn nên hãy sao lưu định kỳ.</p>
+
+    <h2>Tôi vừa xoá app hoặc đổi iPhone và mất dữ liệu Local</h2>
+    <p>Dữ liệu Local chỉ nằm trong ứng dụng trên máy, nên xoá app sẽ xoá luôn dữ liệu. Nếu bạn đã có file sao lưu (.json) từ "Sao lưu dữ liệu Local", cài lại FlexStock rồi vào Cài đặt &rarr; Sao lưu &amp; khôi phục &rarr; "Khôi phục từ file…" và chọn file đó. Nếu chưa có bản sao lưu thì chúng tôi không thể lấy lại dữ liệu Local vì nó không được gửi về máy chủ. Dữ liệu Cloud thì không mất: chỉ cần đăng nhập lại.</p>
+
+    <h2>Khôi phục từ file sao lưu: "Thêm" và "Thay thế toàn bộ" khác nhau thế nào?</h2>
+    <p>Khi máy đã có dữ liệu, màn xem trước cho chọn: <strong>Thêm</strong> giữ nguyên dữ liệu hiện có và thêm các Category trong file như Category mới (trùng tên thì thêm hậu tố "(khôi phục)"); <strong>Thay thế toàn bộ</strong> xoá hết dữ liệu Local hiện có rồi khôi phục đúng nội dung file — không hoàn tác được nên app luôn hỏi lại. Máy chưa có dữ liệu (ví dụ iPhone mới) thì không cần chọn.</p>
 
     <h2>Tôi muốn quét mã vạch để điền, tìm sản phẩm hoặc nhập/xuất kho</h2>
     <p>Cần có ít nhất một field kiểu <strong>Barcode</strong> trong Category (thêm ở Field tuỳ chỉnh). Khi tạo/sửa sản phẩm, bấm <strong>Quét</strong> cạnh field Barcode để điền mã. Ở danh sách sản phẩm, bấm biểu tượng khung quét trên thanh công cụ để tìm sản phẩm theo mã. Ở chế độ Cloud, trong phiếu Nhập kho/Xuất kho bấm <strong>Quét mã vạch</strong>: camera giữ mở và mỗi lần quét thêm 1 sản phẩm vào phiếu. Lần đầu dùng, iPhone sẽ hỏi quyền camera. Ảnh từ camera không được lưu hay gửi đi — mã được đọc ngay trên máy.</p>
@@ -95,7 +101,13 @@
     <p>Open the iPhone Settings app &rarr; your name &rarr; Subscriptions, then choose FlexStock. The plan is tied to the FlexStock account used for the purchase: if you bought it but do not see the benefits, sign in to that exact FlexStock account and reopen the upgrade screen.</p>
 
     <h2>I want to export my data or move to another device</h2>
-    <p>Use "Export CSV" in the app, then "Import CSV" on the new device. For Local data you can also use "Upgrade Local Data to Cloud" in Settings. Local data lives only on your device, so export CSV files as a backup.</p>
+    <p>For Local data the most complete way is <strong>Backup &amp; restore</strong> in Settings: tap "Back up Local data" to save a .json file (it includes Categories, fields and products), then on the new device tap "Restore from file…". You can also use "Export CSV" / "Import CSV" per Category, or "Upgrade Local Data to Cloud" in Settings. Local data lives only on your device, so back it up regularly.</p>
+
+    <h2>I deleted the app or changed iPhone and lost my Local data</h2>
+    <p>Local data lives only inside the app on your device, so deleting the app deletes the data. If you have a backup file (.json) from "Back up Local data", reinstall FlexStock, go to Settings &rarr; Backup &amp; restore &rarr; "Restore from file…" and choose that file. Without a backup we cannot recover Local data, because it is never sent to our servers. Cloud data is not lost: just sign in again.</p>
+
+    <h2>Restoring from a backup file: what is the difference between "Add" and "Replace everything"?</h2>
+    <p>When the device already has data, the preview screen lets you choose: <strong>Add</strong> keeps your existing data and adds the Categories in the file as new Categories (a duplicate name gets a "(restored)" suffix); <strong>Replace everything</strong> deletes all existing Local data and restores exactly what is in the file &mdash; it cannot be undone, so the app always asks again. If the device has no data yet (for example a new iPhone) there is nothing to choose.</p>
 
     <h2>I want to scan barcodes to fill in, find products, or record stock in/out</h2>
     <p>The Category needs at least one <strong>Barcode</strong>-type field (add it under Custom Fields). When creating or editing a product, tap <strong>Scan</strong> next to the Barcode field to fill in the code. In the product list, tap the scan icon in the toolbar to find a product by its code. In Cloud mode, in a Stock-in or Stock-out voucher tap <strong>Scan barcode</strong>: the camera stays open and each scan adds 1 product to the voucher. The first time, iOS asks for camera access. Camera images are not saved or sent anywhere &mdash; the code is read on your device.</p>
@@ -138,7 +150,13 @@
     <p>iPhoneの「設定」アプリ &rarr; ご自身の名前 &rarr; サブスクリプションから、FlexStockを選択してください。プランは購入時に使用したFlexStockアカウントに紐づきます。購入したのに特典が表示されない場合は、そのFlexStockアカウントでログインし、アップグレード画面を開き直してください。</p>
 
     <h2>データをエクスポートしたい・別の端末に移したい</h2>
-    <p>アプリの「CSVをエクスポート」を使い、新しい端末で「CSVをインポート」してください。ローカルデータは、「設定」の「ローカルデータをクラウドへアップグレード」でクラウドへ移行することもできます。ローカルデータは端末内にのみ存在するため、バックアップとしてCSVをエクスポートしておくことをおすすめします。</p>
+    <p>ローカルデータの場合、最も確実なのは「設定」の<strong>バックアップと復元</strong>です。「ローカルデータをバックアップ」をタップして.jsonファイル（カテゴリー、フィールド、商品をすべて含みます）を保存し、新しい端末で「ファイルから復元…」をタップしてください。カテゴリーごとの「CSVをエクスポート」「CSVをインポート」や、「設定」の「ローカルデータをクラウドへアップグレード」も利用できます。ローカルデータは端末内にのみ存在するため、定期的にバックアップしてください。</p>
+
+    <h2>アプリを削除した、またはiPhoneを買い替えてローカルデータが消えた</h2>
+    <p>ローカルデータは端末内のアプリにのみ保存されるため、アプリを削除するとデータも削除されます。「ローカルデータをバックアップ」で保存した.jsonファイルがあれば、FlexStockを再インストールし、「設定」→「バックアップと復元」→「ファイルから復元…」でそのファイルを選んでください。バックアップがない場合、ローカルデータは当方のサーバーに送信されていないため復元できません。クラウドのデータは失われません。再度ログインするだけです。</p>
+
+    <h2>バックアップファイルからの復元：「追加」と「すべて置き換える」の違いは？</h2>
+    <p>端末にすでにデータがある場合、プレビュー画面で選べます。<strong>追加</strong>は既存のデータをそのままにして、ファイル内のカテゴリーを新しいカテゴリーとして追加します（名前が重複する場合は「（復元）」が付きます）。<strong>すべて置き換える</strong>は、既存のローカルデータをすべて削除して、ファイルの内容そのままに復元します。元に戻せないため、アプリは必ず確認します。端末にまだデータがない場合（新しいiPhoneなど）は選ぶ必要はありません。</p>
 
     <h2>バーコードをスキャンして入力・商品検索・入出庫をしたい</h2>
     <p>カテゴリーに<strong>バーコード</strong>型のフィールドが1つ以上必要です（カスタムフィールドで追加）。商品の作成・編集では、バーコードのフィールドの横にある<strong>スキャン</strong>をタップしてコードを入力します。商品一覧ではツールバーのスキャンアイコンをタップすると、コードで商品を検索できます。クラウドモードの入庫・出庫伝票では<strong>バーコードをスキャン</strong>をタップします。カメラは開いたままになり、スキャンするたびに商品が1つ伝票に追加されます。初回はiOSがカメラの使用許可を求めます。カメラの画像は保存も送信もされず、コードはお使いの端末上で読み取られます。</p>
